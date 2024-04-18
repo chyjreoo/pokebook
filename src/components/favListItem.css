@@ -1,0 +1,44 @@
+.fav-list-item {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    background-color: #fff;
+    color: #404040;
+    border-radius: 80px;
+    box-shadow: 2px 2px 6px 0 rgba(0, 0, 0, 0.3);
+    transition: all 280ms;
+}
+.fav-list-item:hover {
+    background-color: #000;
+    color: #fff;
+}
+.fav-list-item .imgbox {
+    width: 60px;
+    height: 60px;
+    border-radius: 0;
+    margin-bottom: 0;
+    margin-right: 16px;
+    flex-shrink: 0;
+    background-color: transparent;
+}
+.fav-list-item .imgbox::before {
+    display: none;
+}
+.fav-list-item .textbox {
+    flex-grow: 1;
+}
+.fav-list-item .heart-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    box-shadow: none;
+    color: #d6d6d6;
+    text-align: center;
+    transition: inherit;
+}
+.heart-btn svg {
+    display: inline-block;
+}
+.fav-list-item:hover .heart-btn {
+    color: #fff;
+}

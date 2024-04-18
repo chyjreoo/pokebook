@@ -1,0 +1,350 @@
+.poke-item {
+    position: relative;
+    border-radius: 24px;
+    text-align: center;
+    z-index: 0;
+}
+.poke-item:hover {
+    animation: card_shake 0.7s 1 both;
+}
+.poke-item::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: inherit;
+    transform: scale(0.9, 0.7) translateY(24%);
+    filter: blur(24px);
+    height: 0px;
+    width: 100%;
+    display: block;
+    padding-bottom: 100%;
+    z-index: -1;
+}
+.tilt-bg {
+    position: absolute;
+    inset: 8px;
+    overflow: hidden;
+    border-radius: 18px;
+}
+.tilt-bg::after {
+    content: "";
+    position: absolute;
+    left: -100px;
+    bottom: -90px;
+    width: 250px;
+    height: 400px;
+    background-color: rgb(255 255 255 / 80%);
+    transform: rotate(-30deg);
+    transform-origin: center;
+    z-index: -1;
+    /* transition: all 280ms cubic-bezier(1, 0, 1, 1); */
+}
+
+.bottom-box {
+    padding-bottom: 32px;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+}
+.imgbox {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 120px;
+    margin-bottom: 24px;
+    position: relative;
+}
+.imgbox::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 100%;
+    background-color: #fff;
+    transition: all 280ms;
+    z-index: -1;
+}
+
+.fav-btn {
+    position: relative;
+    outline: 0;
+    background-color: #fff;
+    box-shadow: 0 0 0 16px #fff;
+    width: 58px;
+    height: 58px;
+    border-radius: 100%;
+    text-align: center;
+    transition: all 100ms;
+}
+.fav-btn.faved {
+    background-color: #c22626;
+    color: #fff;
+}
+.fav-btn:hover {
+    background-color: #000;
+    color: #fff;
+}
+.fav-btn::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 100%;
+    box-shadow: 0 2px 10px -1px rgba(0, 0, 0, 0.1);
+}
+.fav-btn svg {
+    display: inline-block;
+    transition: all 600ms;
+}
+.poke-item:hover .fav-btn svg{
+    animation: ballrotate 1s linear infinite;
+}
+@keyframes ballrotate {
+    0% {transform: rotate(0);}
+    100% {transform: rotate(360deg);}
+}
+.fav-btn:hover svg {
+    transform: rotate(180deg);
+}
+.type-badge {
+    padding: 3px 12px;
+    border-radius: 32px;
+    color: #fff;
+    font-size: 0.9em;
+    line-height: 1;
+    transition: opacity 280ms;
+}
+.type-badge.inactive {
+    opacity: 0.5;
+}
+.type-badge.active {
+    opacity: 1;
+}
+.type-badge::before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 12px;
+    height: 12px;
+    margin-right: 4px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.cate-box .type-badge {
+    font-size: 1em;
+    padding: 6px 16px;
+}
+.cate-box .type-badge::before {
+    width: 18px;
+    height: 18px;
+    margin-right: 8px;
+}
+.bg-bug {
+    background-color: #99c631;
+}
+.type-badge.bg-bug::before {
+    background-image: url(../../public/images/icons/bug.svg);
+}
+.poke-item.bg-bug {
+    background: linear-gradient(120deg, #c2ef5a, #d5f590, rgba(233, 250, 198, 1));
+}
+.bg-dark {
+    background-color: #4a4858;
+}
+.type-badge.bg-dark::before {
+    background-image: url(../../public/images/icons/dark.svg);
+}
+.poke-item.bg-dark {
+    background: linear-gradient(120deg, #6d6c75, #a9a8a9, rgba(199, 199, 199, 1));
+}
+.bg-dragon {
+    background-color: #0763ad;
+}
+.type-badge.bg-dragon::before {
+    background-image: url(../../public/images/icons/dragon.svg);
+}
+.poke-item.bg-dragon {
+    background: linear-gradient(120deg, #92c4ec, #b7d6f9, rgba(227, 238, 255, 1));
+}
+.bg-electric {
+    background-color: #f5d13e;
+}
+.type-badge.bg-electric::before {
+    background-image: url(../../public/images/icons/electric.svg);
+}
+.poke-item.bg-electric {
+    background: linear-gradient(120deg, #ffeca0, #fff2bf, rgba(255, 248, 222, 1));
+}
+.bg-fairy {
+    background-color: #ef8dde;
+}
+.type-badge.bg-fairy::before {
+    background-image: url(../../public/images/icons/fairy.svg);
+}
+.poke-item.bg-fairy {
+    background: linear-gradient(120deg, #f9b0ed, #fdcff6, rgba(255, 241, 253, 1));
+}
+.bg-fighting {
+    background-color: #e24653;
+}
+.type-badge.bg-fighting::before {
+    background-image: url(../../public/images/icons/fighting.svg);
+}
+.poke-item.bg-fighting {
+    background: linear-gradient(120deg, #f49da4, #fbb9be, rgba(255, 216, 219, 1));
+}
+.bg-fire {
+    background-color: #ff9c52;
+}
+.type-badge.bg-fire::before {
+    background-image: url(../../public/images/icons/fire.svg);
+}
+.poke-item.bg-fire {
+    background: linear-gradient(120deg, #ffc99f, #ffdcc1, rgba(255, 239, 227, 1));
+}
+.bg-flying {
+    background-color: #88adde;
+}
+.type-badge.bg-flying::before {
+    background-image: url(../../public/images/icons/flying.svg);
+}
+.poke-item.bg-flying {
+    background: linear-gradient(120deg, #c8daf1, #d7e7fb, rgba(236, 244, 255, 1));
+}
+.bg-ghost {
+    background-color: #555da3;
+}
+.type-badge.bg-ghost::before {
+    background-image: url(../../public/images/icons/ghost.svg);
+}
+.poke-item.bg-ghost {
+    background: linear-gradient(120deg, #cac8e9, #d4d4ed, rgba(223, 223, 241, 1));
+}
+.bg-grass {
+    background-color: #63bd52;
+}
+.type-badge.bg-grass::before {
+    background-image: url(../../public/images/icons/grass.svg);
+}
+.poke-item.bg-grass {
+    background: linear-gradient(120deg, #7dd66c, #8edb8f, rgba(175, 226, 184, 1));
+}
+.bg-ground {
+    background-color: #d87846;
+}
+.type-badge.bg-ground::before {
+    background-image: url(../../public/images/icons/ground.svg);
+}
+.poke-item.bg-ground {
+    background: linear-gradient(120deg, #e9bea6, #f0d4c4, rgba(247, 234, 226, 1));
+}
+.bg-ice {
+    background-color: #71cec2;
+}
+.type-badge.bg-ice::before {
+    background-image: url(../../public/images/icons/ice.svg);
+}
+.poke-item.bg-ice {
+    background: linear-gradient(120deg, #bbefe8, #cef4ef, rgba(226, 249, 246, 1));
+}
+.bg-normal {
+    background-color: #9399a5;
+}
+.type-badge.bg-normal::before {
+    background-image: url(../../public/images/icons/normal.svg);
+}
+.poke-item.bg-normal {
+    background: linear-gradient(120deg, #b9bbbf, #d7d7d8, rgba(243, 243, 243, 1));
+}
+.bg-poison {
+    background-color: #a567c7;
+}
+.type-badge.bg-poison::before {
+    background-image: url(../../public/images/icons/poison.svg);
+}
+.poke-item.bg-poison {
+    background: linear-gradient(120deg, #c8acd7, #dac6e6, rgba(236, 225, 243, 1));
+}
+.bg-psychic {
+    background-color: #f86e76;
+}
+.type-badge.bg-psychic::before {
+    background-image: url(../../public/images/icons/psychic.svg);
+}
+.poke-item.bg-psychic {
+    background: linear-gradient(120deg, #f7adb2, #fcc9cb, rgba(255, 232, 232, 1));
+}
+.bg-rock {
+    background-color: #c6bd8c;
+}
+.type-badge.bg-rock::before {
+    background-image: url(../../public/images/icons/rock.svg);
+}
+.poke-item.bg-rock {
+    background: linear-gradient(120deg, #e5e0c5, #ede9d2, rgba(244, 241, 224, 1));
+}
+.bg-steel {
+    background-color: #5a90a9;
+}
+.type-badge.bg-steel::before {
+    background-image: url(../../public/images/icons/steel.svg);
+}
+.poke-item.bg-steel {
+    background: linear-gradient(120deg, #a2bfcd, #bdd2db, rgba(216, 228, 233, 1));
+}
+.bg-water {
+    background-color: #5395de;
+}
+.type-badge.bg-water::before {
+    background-image: url(../../public/images/icons/water.svg);
+}
+.poke-item.bg-water {
+    background: linear-gradient(120deg, #9cd3f6, #bae5fc, rgba(219, 244, 255, 1));
+}
+@keyframes card_shake {
+    0% {
+        transform: translate(0, 0) rotate(0);
+    }
+
+    10% {
+        transform: translate(-2px, 0) rotate(-5deg);
+    }
+
+    20% {
+        transform: translate(2px, 0) rotate(5deg);
+    }
+
+    40% {
+        transform: translate(-2px, 0) rotate(-5deg);
+    }
+
+    50% {
+        transform: translate(2px, 0) rotate(5deg);
+    }
+
+    70% {
+        transform: translate(0, 0) rotate(0);
+    }
+    100% {
+        transform: translate(0, 0) rotate(0);
+    }
+}
+
+@media (max-width: 450px) {
+    .cate-box {
+        width: 100%;
+        overflow-x: auto;
+        overflow-y: hidden;
+    }
+    .imgbox {
+        width: 90px;
+        height: 90px;
+        margin-bottom: 16px;
+    }
+
+    .fav-btn {
+        box-shadow: 0 0 0 8px #fff;
+        width: 48px;
+        height: 48px;
+    }
+}
