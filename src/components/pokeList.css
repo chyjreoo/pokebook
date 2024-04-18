@@ -1,0 +1,89 @@
+
+.title-box {
+    position: relative;
+}
+.title-box::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 800px;
+    height: 800px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 160px -160px;
+    z-index: -1;
+    opacity: .1;
+}
+.title-box.bug::before {
+    background-image: url(../../public/images/icons/bug.svg);
+    filter: invert(45%) sepia(25%) saturate(6695%) hue-rotate(60deg) brightness(112%) contrast(81%);
+}
+.title-box.dark::before {
+    background-image: url(../../public/images/icons/dark.svg);
+    filter: invert(46%) sepia(6%) saturate(463%) hue-rotate(207deg) brightness(90%) contrast(91%);
+}
+.title-box.dragon::before {
+    background-image: url(../../public/images/icons/dragon.svg);
+    filter: invert(81%) sepia(5%) saturate(2591%) hue-rotate(184deg) brightness(400%) contrast(95%);
+}
+.title-box.electric::before {
+    background-image: url(../../public/images/icons/electric.svg);
+    filter: invert(86%) sepia(34%) saturate(443%) hue-rotate(370deg) brightness(434%) contrast(218%);
+}
+.title-box.fairy::before {
+    background-image: url(../../public/images/icons/fairy.svg);
+    filter: invert(80%) sepia(10%) saturate(1604%) hue-rotate(277deg) brightness(380%) contrast(95%);
+}
+.title-box.fighting::before {
+    background-image: url(../../public/images/icons/fighting.svg);
+    filter: invert(77%) sepia(16%) saturate(672%) hue-rotate(307deg) brightness(321%) contrast(97%);
+}
+.title-box.fire::before {
+    background-image: url(../../public/images/icons/fire.svg);
+    filter: invert(87%) sepia(30%) saturate(480%) hue-rotate(337deg) brightness(503%) contrast(121%);
+}
+.title-box.flying::before {
+    background-image: url(../../public/images/icons/flying.svg);
+    filter: invert(82%) sepia(5%) saturate(1441%) hue-rotate(183deg) brightness(328%) contrast(129%);
+}
+.title-box.ghost::before {
+    background-image: url(../../public/images/icons/ghost.svg);
+    filter: invert(83%) sepia(27%) saturate(399%) hue-rotate(200deg) brightness(439%) contrast(84%);
+}
+.title-box.grass::before {
+    background-image: url(../../public/images/icons/grass.svg);
+    filter: invert(88%) sepia(9%) saturate(1748%) hue-rotate(63deg) brightness(527%) contrast(129%);
+}
+.title-box.ground::before {
+    background-image: url(../../public/images/icons/ground.svg);
+    filter: invert(73%) sepia(100%) saturate(162%) hue-rotate(323deg) brightness(96%) contrast(89%);
+}
+.title-box.ice::before {
+    background-image: url(../../public/images/icons/ice.svg);
+    filter: invert(88%) sepia(16%) saturate(259%) hue-rotate(117deg) brightness(646%) contrast(121%);
+}
+.title-box.normal::before {
+    background-image: url(../../public/images/icons/normal.svg);
+    filter: invert(77%) sepia(5%) saturate(179%) hue-rotate(182deg) brightness(98%) contrast(88%);
+}
+.title-box.poison::before {
+    background-image: url(../../public/images/icons/poison.svg);
+    filter: invert(83%) sepia(10%) saturate(1536%) hue-rotate(217deg) brightness(440%) contrast(86%);
+}
+.title-box.psychic::before {
+    background-image: url(../../public/images/icons/psychic.svg);
+    filter: invert(75%) sepia(17%) saturate(735%) hue-rotate(308deg) brightness(238%) contrast(348%);
+}
+.title-box.rock::before {
+    background-image: url(../../public/images/icons/rock.svg);
+    filter: invert(87%) sepia(20%) saturate(301%) hue-rotate(393deg) brightness(493%) contrast(172%);
+}
+.title-box.steel::before {
+    background-image: url(../../public/images/icons/steel.svg);
+    filter: invert(86%) sepia(19%) saturate(372%) hue-rotate(163deg) brightness(386%) contrast(244%);
+}
+.title-box.water::before {
+    background-image: url(../../public/images/icons/water.svg);
+    filter: invert(66%) sepia(96%) saturate(211%) hue-rotate(177deg) brightness(204%) contrast(93%);
+}

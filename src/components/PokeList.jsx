@@ -1,3 +1,4 @@
+import './pokeList.css';
 import PokeItem from "./PokeItem";
 import Skeleton from "./Skeleton";
 import { getAllpokemon, getPokemonSpecies, getPokemonType, getFilteredPokemon, fetchTypeTotalCount, fetchTotalCount } from '../api/getPokeApi';
@@ -164,7 +165,7 @@ function PokeList() {
 
     return (
         <div className='container mx-auto px-2 md:px-0 py-5'>
-            <div className="text-right">
+            <div className={`title-box text-right ${filterType}`}>
                 <h2 className="text-3xl uppercase font-bold mt-10 mb-2">my PokeBook</h2>
                 <span className="tracking-wide capitalize">{filterType || '迷你抓寶箱'}</span>
             </div>
