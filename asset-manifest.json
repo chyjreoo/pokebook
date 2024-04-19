@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/static/css/main.5c3174f3.css",
+    "main.js": "/static/js/main.184bd591.js",
+    "static/media/dragon.svg": "/static/media/dragon.9d32757b191cbbaea8d4.svg",
+    "static/media/fire.svg": "/static/media/fire.e0bd7fcab2121e7ac1ff.svg",
+    "static/media/psychic.svg": "/static/media/psychic.67439878eaa68ee726de.svg",
+    "static/media/fairy.svg": "/static/media/fairy.767c2f5699eb5f1120f1.svg",
+    "static/media/bug.svg": "/static/media/bug.204df919b74456c6dc72.svg",
+    "static/media/rock.svg": "/static/media/rock.61a8428da62eeab93746.svg",
+    "static/media/ice.svg": "/static/media/ice.cd2f90437e3fe39235a9.svg",
+    "static/media/ghost.svg": "/static/media/ghost.ddf268314aed78d0524d.svg",
+    "static/media/flying.svg": "/static/media/flying.d17785038a59f3ce2121.svg",
+    "static/media/fighting.svg": "/static/media/fighting.f20d1bd24f0cde62bb37.svg",
+    "static/media/poison.svg": "/static/media/poison.43956925ad0376b77c7e.svg",
+    "static/media/steel.svg": "/static/media/steel.cb91a92a3b5197e2cf61.svg",
+    "static/media/ground.svg": "/static/media/ground.e567f4fc3f3422598757.svg",
+    "static/media/dark.svg": "/static/media/dark.27fdc7ed2bd3294b9838.svg",
+    "static/media/water.svg": "/static/media/water.b6d13329535e4be9e9b4.svg",
+    "index.html": "/index.html",
+    "static/media/electric.svg": "/static/media/electric.bc35c5a3faf04b605c00.svg",
+    "static/media/grass.svg": "/static/media/grass.e09623e3345d5bf5286f.svg",
+    "static/media/normal.svg": "/static/media/normal.2ba66dd583ebf70eb414.svg",
+    "main.5c3174f3.css.map": "/static/css/main.5c3174f3.css.map",
+    "main.184bd591.js.map": "/static/js/main.184bd591.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5c3174f3.css",
+    "static/js/main.184bd591.js"
+  ]
+}
