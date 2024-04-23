@@ -44,6 +44,7 @@ function PokeList() {
      window.onscroll = async () => {
         if (window.innerHeight + document.documentElement.scrollTop === document.documentElement.offsetHeight) {
             if (filterData.length <= totalCount) {
+                setIsLoading(true);
                 
                 const newStartId = (pokeData.length) + 1;
                 const newStartId_fiter = (filterData.length) + 1;
@@ -56,13 +57,12 @@ function PokeList() {
     
                 const updateLoad = await loadPokemon(updatedData);
                 if (updateLoad.length) {
-                    setIsLoading(true);
                     
                     setPokeData([...pokeData, ...updateLoad]);
                     setLoadedCount(filterData.length + updateLoad.length);
-    
+                    
                     setFilterData([...filterData, ...updateLoad])
-    
+                    
                     const timer = setTimeout(() => {
                         setIsLoading(false);
                     }, 1200);
