@@ -17,7 +17,7 @@ function PokeList() {
     const typeColors = typeColor();
 
     const [totalCount, setTotalCount] = useState(0);
-    const [loadedCount, setLoadedCount] = useState(0);
+    // const [loadedCount, setLoadedCount] = useState(0);
 
     const startId = 1;
     const lang = "zh-Hant";
@@ -36,7 +36,7 @@ function PokeList() {
             setTotalCount(totalCount);
 
         }
-        setLoadedCount(0)
+        // setLoadedCount(0)
         getCount();
 
     }, [filterType]);
@@ -59,7 +59,7 @@ function PokeList() {
                 if (updateLoad.length) {
                     
                     setPokeData([...pokeData, ...updateLoad]);
-                    setLoadedCount(filterData.length + updateLoad.length);
+                    // setLoadedCount(filterData.length + updateLoad.length);
                     
                     setFilterData([...filterData, ...updateLoad])
                     
@@ -149,7 +149,7 @@ function PokeList() {
             setFilterType('');
             setIsLoading(false);
             allCount().then(num => { 
-                setLoadedCount(0)
+                // setLoadedCount(0)
                 setTotalCount(num);
             });
 
